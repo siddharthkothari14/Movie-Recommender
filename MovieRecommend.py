@@ -53,12 +53,12 @@ def recommend(movie):
     return recommended_movies, recommended_movies_poster,description,genre,rating
 
 
-st.header('Movie Recommender System')
+st.header('Movie Recommender')
 selected_movie = st.selectbox(
-    "Suggest similar movies",
+    "Select a  movie : ",
     movies['title'].values
 )
-if st.button('Recommend',type="primary"):
+if st.button('Suggest Similar movies',type="primary"):
     recommended_movie_names,recommended_movie_posters,description,genre,rating = recommend(selected_movie)
     col1, col2, col3, col4, col5  = st.columns(5)
     with col1:
