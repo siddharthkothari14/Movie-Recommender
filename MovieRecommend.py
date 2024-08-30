@@ -55,7 +55,7 @@ def recommend(movie):
 
 st.header('Movie Recommender System')
 selected_movie = st.selectbox(
-    "Select a movie",
+    "Suggest similar movies",
     movies['title'].values
 )
 if st.button('Recommend',type="primary"):
